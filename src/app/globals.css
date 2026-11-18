@@ -1,0 +1,8 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html { scroll-behavior: smooth; background: #080808; }
+body { @apply bg-ink text-bone font-sans antialiased; }
+::selection { background: #C6A15B; color: #080808; }
+:focus-visible { outline: 2px solid #C6A15B; outline-offset: 4px; }
+.gold-text { background: linear-gradient(100deg,#8f6f33,#C6A15B 40%,#ecd9a8 55%,#C6A15B 70%,#8f6f33); background-size: 200% 100%; -webkit-background-clip: text; color: transparent; animation: sheen 9s linear infinite; }
+@keyframes sheen { to { background-position: -200% 0; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .gold-text { animation: none; } }
